@@ -3,9 +3,6 @@
     <ol>
       <el-input  placeholder="请添加计划" type="text" v-model="add" style="width: 50%"></el-input>
       <el-button type="primary" icon="el-icon-plus" @click="getAdd()">添加</el-button>
-      <br>
-      <hr>
-      <br>
       <li v-for="(item,index) in dataSource":key="index" @click="changeClick(item)">
         <del v-if="item.done" class="">{{item.text}}</del>
         <span v-else>{{item.text}}</span>
