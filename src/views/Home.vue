@@ -18,8 +18,8 @@
       </el-menu-item>
     </el-menu>
   </div>
-    <ul class="infinite-list" v-infinite-scroll="load" style="overflow:auto">
-      <li v-for="o in 10" :key="o" class="infinite-list-item">
+    <ul >
+      <li v-for="o in 10" :key="o" class="text-item">
         <el-row>
             <el-card :body-style="{ padding: '0px' }" style="width: 864px;height: 276px">
               <img src="../image/1.png" class="image">

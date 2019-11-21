@@ -1,5 +1,5 @@
 <template>
-  <div id="app" CLASS="login-container">
+  <div id="app" >
     <div id="nav" >
           <router-link to="/" >
           </router-link><router-view/>
@@ -41,10 +41,4 @@
     margin-left: 25%;
     width: 50%;
   }
-.login-container {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
-}
 </style>

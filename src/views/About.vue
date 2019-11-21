@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div CLASS="login-container">
     <div id="nav" >
       <el-menu  class="el-menu-demo" mode="horizontal" id="menu" @select="handleSelect">
         <el-menu-item index="1" >
@@ -41,6 +41,15 @@
     }
 
   };
-
 </script>
+
+<style>
+  .login-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
+  }
+</style>
+
 
