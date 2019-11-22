@@ -1,14 +1,17 @@
 <template>
-  <div CLASS="login-container">
-   <div class="home">
-    <div class="note" :style ="note"></div>
-    <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-    用户登陆<br>
-    <el-input v-model="from.username" placeholder="请输入用户名" style="width:200px"></el-input><br>
-    <el-input v-model="from.password" placeholder="请输入密码"  show-password style="width:200px"></el-input><br>
-    <el-button type="primary" icon="el-icon-edit" @click="handleClick">登录</el-button>
-    </el-form>
-   </div>
+  <div CLASS="login-container" >
+      <el-form   label-width="80px" >
+        用户登陆<br>
+        <el-form-item >
+          <el-input v-model="from.username" placeholder="请输入用户名" style="width:200px"></el-input>
+        </el-form-item >
+        <el-form-item  >
+          <el-input v-model="from.password" placeholder="请输入密码"  show-password style="width:200px"></el-input>
+        </el-form-item >
+        <el-form-item >
+          <el-button type="primary" icon="el-icon-edit" @click="handleClick">登录</el-button>
+        </el-form-item >
+      </el-form>
   </div>
 </template>
 
@@ -50,17 +53,4 @@
 
 </script>
 <style>
-  .text-item{
-    list-style: none;
-    cursor: pointer;
-    width: 50%;
-    margin-left: 25%;
-
-  }
-  .login-container {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
-  }
 </style>

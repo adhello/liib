@@ -7,9 +7,14 @@
             <el-image style="width: 68px;height: 60px;padding: 0" :src="url1"></el-image>
           </router-link>
         </el-menu-item>
-        <el-menu-item index="2" >
+        <el-submenu index="2">
+          <template slot="title">
           <router-link to="/about" >首页</router-link>
-        </el-menu-item>
+          </template>
+          <el-menu-item index="2-1"><router-link to="/rl" >日历</router-link></el-menu-item>
+          <el-menu-item index="2-2"><router-link to="/zm" >走马灯</router-link></el-menu-item>
+          <el-menu-item index="2-3"><router-link to="/js" >检索</router-link></el-menu-item>
+        </el-submenu>
         <el-menu-item index="3" >
           <router-link to="/home" >Cardlist</router-link>
         </el-menu-item>

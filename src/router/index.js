@@ -21,6 +21,21 @@ const routes = [
     component: () => import('../views/Todo.vue'),
   },
   {
+    path: '/zm',
+    name: 'zm',
+    component: () => import('../views/zm.vue'),
+  },
+  {
+    path: '/js',
+    name: 'js',
+    component: () => import('../views/js.vue'),
+  },
+  {
+    path: '/rl',
+    name: 'login',
+    component: () => import('../views/rl.vue'),
+  },
+  {
     path: '/',
     name: 'login',
     component: () => import('../views/Login.vue'),
