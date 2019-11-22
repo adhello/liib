@@ -1,8 +1,8 @@
 <template>
   <div>
-  <el-carousel :interval="4000" type="card" height="500px" boolean>
-    <el-carousel-item v-for="item in 6" :key="item">
-      <h3 class="medium">{{ item }}</h3>
+  <el-carousel :interval="4000" type="card" height="350px"  boolean>
+    <el-carousel-item v-for="item in list" :key="item">
+      <img style="-webkit-user-select: none;max-width: 100%;margin: auto;" :src="item.url" />
     </el-carousel-item>
   </el-carousel>
   </div>
@@ -13,7 +13,7 @@
     name: 'Zm',
     data() {
       return {
-        url: 'https://api.myjson.com/bins/oax8y',
+        url: 'https://api.myjson.com/bins/v4rk2',
         list: []
       };
     },
@@ -23,7 +23,8 @@
     methods: {
       async fetch() {
         const { data } = await this.$http.get(this.url);
-        this.list = data.list;
+        this.list = data.cradlist;
+        console.log(this.list);
       },
     }
   };

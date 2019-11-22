@@ -1,7 +1,7 @@
 <template>
   <div >
     <div id="nav" >
-      <el-menu  class="el-menu-demo" mode="horizontal" id="menu" @select="handleSelect">
+      <el-menu  class="el-menu-demo" mode="horizontal" id="menu" >
         <el-menu-item index="1" >
           <router-link to="/" >
             <el-image style="width: 68px;height: 60px;padding: 0" :src="url1"></el-image>
